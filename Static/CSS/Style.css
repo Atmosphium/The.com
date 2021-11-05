@@ -1,0 +1,225 @@
+@import url('/CSS/Fonts.css');
+
+:root {
+    /* Monochromatic Colors */
+    --black: #0c0c0c;
+    --white: #fcfcfc;
+    --grey: #808080;
+    --dark-grey: #202020;
+    --light-grey: #e0e0e0;
+
+    /* TheDotCom Branding Colors */
+    --sky-blue: #85b3e0;
+    --peach-red: #db7070;
+    --lime-green: #7eeb47;
+    --sunset-yellow: #f4df25;
+}
+
+html {
+    background: var(--white)
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #0f60f0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0f30f0;
+}
+
+a:active {
+    color: #0000ff
+}
+
+input {
+    padding: 0.4rem;
+    background: #dedef0;
+    font: 400 1.2rem 'Geometria', sans-serif;
+    border: 0.1rem solid var(--black);
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #20202080;
+    outline: none
+}
+
+input[type='submit'] {
+    padding: 0.4rem;
+    border: 0.1rem solid var(--black);
+    box-shadow: none;
+    transition: 0.25s
+}
+
+input:focus {
+    background: #ffffff;
+}
+
+input[type='submit']:hover {
+    padding: 1rem;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+label {
+    font: 400 1.6rem 'Geometria', sans-serif
+}
+
+select {
+    padding: 0.8rem 0.4rem;
+    background: var(--light-grey);
+    color: var(--black);
+    font: 400 0.8rem 'Geometria', sans-serif;
+    outline: none;
+}
+
+select option {
+    padding: 0.4rem
+}
+
+span.skyBlue {
+    color: var(--sky-blue)
+}
+
+span.peachRed {
+    color: var(--peach-red)
+}
+
+span.limeGreen {
+    color: var(--lime-green)
+}
+
+span.sunsetYellow {
+    color: var(--sunset-yellow)
+}
+
+
+nav {
+    padding: 1rem;
+    box-shadow: 0 0.1vh 0.5rem -0.05rem #0f0f0f40
+}
+
+nav button {
+    vertical-align: top;
+    margin: 0rem 2rem;
+    padding: 1rem;
+    background: var(--light-grey) linear-gradient(to top, var(--white), var(--light-grey));
+    color: black;
+    font: 200 1rem 'Inter', sans-serif;
+    border: none;
+    cursor: pointer;
+    transition: background 0.25s cubic-bezier(0.17, 0.67, 0.83, 0.67)
+}
+
+nav button:hover {
+    background: var(--white) linear-gradient(to top, var(--light-grey), var(--white))
+}
+
+nav button#home {
+    padding: 0;
+    background: none;
+}
+
+nav button#home:hover {
+    box-shadow: none;
+}
+
+nav button#home img {
+    height: 3rem
+}
+
+nav button#signin, nav img#avatar {
+    float: right
+}
+
+main {
+    padding: 4vh 4vw;
+    background: url('/Images/Background.svg') repeat top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+main h1 {
+    font: 900 4rem/4.8rem 'Geometria', sans-serif
+}
+
+main h1#ourMission {
+    margin: auto;
+    padding: 2rem;
+    background: #20202030;
+    width: 80%;
+    font: 700 3.6rem/4.8rem 'Geometria', sans-serif;
+    text-align: center;
+}
+
+main div#signup {
+    padding: 0rem 24rem
+}
+
+main div#signup form * {
+    margin-top: 0.4rem;
+    width: 100%
+}
+
+main div#signup form select.birthday {
+    display: inline-block;
+    margin: auto;
+}
+
+main div#signup form select.birthday#bdDay {
+    width: 22%
+}
+
+main div#signup form select.birthday#bdMon {
+    width: 40%
+}
+
+main div#signup form select.birthday#bdYea {
+    width: 36%
+}
+
+footer {
+    position: relative;
+    padding: 2.5%;
+    background: var(--black);
+    height: 80%
+}
+
+footer img {
+    margin-right: 4rem;
+    height: 8rem;
+    width: 8rem
+}
+
+footer div {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: -1rem;
+    margin-right: 4rem
+}
+
+footer div h4 {
+    color: var(--grey);
+    font: 300 1.2rem 'Inter', sans-serif
+}
+
+footer div a {
+    color: var(--grey);
+    font: 200 1rem 'Inter', sans-serif;
+    text-decoration: none
+}
+
+footer div a:hover {
+    color: var(--light-grey)
+}
+
+footer p {
+    position: absolute;
+    bottom: 1%;
+    padding-top: 1.6%;
+    color: var(--white);
+    width: 95%;
+    font: 200 1rem 'Inter', sans-serif;
+    border-top: 0.1rem solid var(--white)
+}

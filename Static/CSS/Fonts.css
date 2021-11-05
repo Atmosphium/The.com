@@ -1,0 +1,59 @@
+@font-face {
+    font-weight: 100;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 100.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 200;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 200.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 300.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 400;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 400.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 500.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 700.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 800;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 800.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 900;
+    font-family: 'Geometria';
+    src: url('/Fonts/Geometria 900.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 200;
+    font-family: 'Inter';
+    src: url('/Fonts/Inter 200.ttf') format('truetype')
+}
+
+@font-face {
+    font-weight: 300;
+    font-family: 'Inter';
+    src: url('/Fonts/Inter 300.ttf') format('truetype')
+}
