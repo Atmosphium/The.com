@@ -1,1 +1,0 @@
-const goTo = Page => window.location = `/${Page}`

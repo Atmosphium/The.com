@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Kod Eğitimleri - Ayyıldız</title>
+
+    <link rel="stylesheet" href="/Tasarım.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lexend+Deca|Livvic|Manjari|Montserrat|Open+Sans|Roboto&display=swap"
+    />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+      p {
+        margin: 0;
+        color: blue;
+      }
+      div,
+      p {
+        margin-left: 10px;
+      }
+      span {
+        color: red;
+      }
+    </style>
+  </head>
+  <body
+    background="https://ak3.picdn.net/shutterstock/videos/17025883/thumb/1.jpg"
+    style="background-size: 100%"
+  >
+    <form action="javascript:alert( 'success!' );">
+      <div>
+        <input type="text" style="font-size: 18px" placeholder="E-posta adresinizi giriniz."/><select
+          style="font-size: 18px"
+        >
+          <option>@gmail.com</option>
+          <option>@hotmail.com</option>
+          <option>@outlook.com</option>
+          <option>@mail.ru</option>
+        </select>
+        <input type="submit" id="Marhaban" style="visibility: hidden" />
+        <label for="Marhaban"
+          ><button
+            style="
+          margin: 0px -65px;
+          background: #0f0f1f;
+          border: 2px solid #ffffff;
+          color: #1f1fff;
+          font-size: 20px;
+          font-family: monospace
+          "
+          >
+            Gönder
+          </button></label
+        >
+      </div>
+    </form>
+    <span></span>
+
+    <script>
+      $("form").submit(function(event) {
+        if (
+          !$("input")
+            .first()
+            .val()
+            .includes("@")
+        ) {
+          $("span")
+            .text("Validated...")
+            .show()
+            .fadeOut(10000);
+          return;
+        }
+
+        $("span")
+          .text("Not valid!")
+          .show()
+          .fadeOut(5000);
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

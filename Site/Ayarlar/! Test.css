@@ -1,0 +1,48 @@
+body {
+  background: #000000;
+  background: radial-gradient(circle, #ff9f00 0%, #7f00ff 100%);
+  margin: 0;
+  font-family: monospace;
+  font-style: normal;
+  font-weight: 400
+}
+
+.Orta {
+  margin: 130px 500px
+}
+
+img {
+  mask: url(https://cdn.glitch.com/03cacd0f-af30-43d3-8ed8-e4552611849d%2Fcdn_glitch_com-%D0%AF%20-%20Ayy%C4%B1ld%C4%B1z.svg?v=1574079742458);
+  mask-type: initial
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+p.sec::selection {
+  color: #00ff00;
+  background: #000000
+}
+
+p.sec::-moz-selection {
+  color: #00ff00;
+  background: #000000
+}
